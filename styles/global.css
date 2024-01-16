@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-justify: inter-word;
+    text-align: justify;
+    font-family: 'JMH Typewriter';
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+footer {
+    display: grid;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    margin-top: 10px;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+}
+
+#toc {
+    float: left;
+    width: 15%;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#toc a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+#toc ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#toc a::before {
+    content: "§ ";
+}
+
+#toc a:hover {
+    background-color: #ddd;
+}
+
+.pages {
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.page {
+    margin-left: 15%;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.page section {
+    text-align: center;
+}
+
+.page section::before {
+    content: "§ ";
+}
