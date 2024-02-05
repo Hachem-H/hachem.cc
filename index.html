@@ -6,51 +6,55 @@
     <title>Hachem H.</title>
     
     <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles/about.css" />
     <link rel="stylesheet" type="text/css" href="styles/global.css" />
 </head>
 <body>
+    <script src="src/state.js"></script>
+
     <nav id="toc">
         <h2>Table of Contents</h2>
         <ul>
-            <li><a href="#about-page">About the author</a></li>
-            <li><a href="#cs-page">Computer Science</a></li>
-            <li><a href="#music-page">Music and Composition</a></li>
-            <li><a href="#lit-philo">Literature and Philosphy</a></li>
+            <li><a onclick="SetState(States.ABOUT);">About the author</a></li>
+            <li><a onclick="SetState(States.CS);">Computer Science</a></li>
+            <li><a>Music &amp; Art</a></li>
+            <li><a>Physics &amp; Mathematics</a></li>
+            <li><a>Philosophy &amp; Litterature</a></li>
         </ul>
     </nav>
     
     <div class="pages">
         <section id="about-page" class="page">
-            <h1>About the author</h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet aliquam id. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Donec adipiscing tristique risus nec feugiat in. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Egestas fringilla phasellus faucibus scelerisque. Risus nullam eget felis eget nunc. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Tempor id eu nisl nunc mi ipsum faucibus. Consectetur adipiscing elit duis tristique. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Est lorem ipsum dolor sit amet consectetur adipiscing elit.
+            <div id="about-header">
+                <img id="about-logo" src="Assets/Images/Logo.jpg" />
+                <div id="about-info">
+                    <h1>Hachem H.</h1>
+                    A researcher who wants to make<br>truth their best friend.
+                </div>
+            </div>
 
-                A diam sollicitudin tempor id eu. Etiam sit amet nisl purus. Semper feugiat nibh sed pulvinar. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Cras semper auctor neque vitae tempus quam pellentesque nec. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Ornare massa eget egestas purus viverra accumsan. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Ligula ullamcorper malesuada proin libero nunc consequat. Facilisis magna etiam tempor orci eu lobortis elementum nibh tellus. Quam pellentesque nec nam aliquam. Vel turpis nunc eget lorem dolor sed. Adipiscing tristique risus nec feugiat in fermentum posuere. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida.
+            <div id="about-content">
+                <h1>Who am I?</h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, ex nec ornare pretium, turpis dui gravida tellus, in porttitor sem urna in tellus. In vel maximus metus, nec mollis purus. Duis ut mi mattis, scelerisque arcu sed, porta enim. Sed enim nisi, volutpat cursus risus vitae, hendrerit dignissim tortor. Vivamus eget sapien magna. Sed porttitor laoreet mattis. Fusce scelerisque ex et lectus tincidunt venenatis. Mauris id ante vel neque ultrices aliquet. Vestibulum finibus egestas odio, nec rutrum quam luctus at. Quisque scelerisque convallis pretium.
+
+                <h1>What am I?</h2>
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent ac nulla nec sapien elementum ultricies. Sed vitae molestie ligula, eget iaculis dui. Mauris auctor quam at ipsum auctor, vel congue nulla vehicula. Nunc lectus dolor, sodales nec sapien at, posuere lacinia enim. Quisque eget lorem maximus, porttitor dolor id, molestie erat. Fusce gravida tempus turpis, in lobortis velit. In in felis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+                <h1>Why am I?</h2>
+                Vivamus pellentesque, diam ut tempor congue, odio enim ultricies leo, et cursus elit turpis vel nisl. Nunc a auctor sapien. Sed diam velit, eleifend ut purus vel, posuere ultrices eros. Sed ac urna vitae massa molestie porttitor non et arcu. Quisque sollicitudin pulvinar sagittis. Nulla quis porttitor quam. Maecenas urna mi, euismod sit amet urna a, dignissim semper ipsum. Curabitur tincidunt augue erat, in condimentum est facilisis non. Curabitur faucibus dui vel fringilla facilisis. Ut et neque sed augue ullamcorper porttitor quis sit amet massa. Aliquam venenatis dapibus urna, vitae pharetra augue varius quis.
+            </div>
         </section>
 
-        <section id="cs-page" class="page">
-            <h1>Computer Science</h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio morbi quis commodo odio aenean sed adipiscing. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat.
-            <h2>Featured Pieces</h2>
-            <section>Iridis</section>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio morbi quis commodo odio aenean sed adipiscing. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat.
-            <h2>Featured Pieces</h2>
-            <section>Excalibur</section>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio morbi quis commodo odio aenean sed adipiscing. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat.
-        </section>
-
-        <section id="music-page" class="page">
-            <h1>Music and Composition</h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio morbi quis commodo odio aenean sed adipiscing. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat.
-            <h2>Featured Pieces</h2>
-            <section>Fugues</section>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio morbi quis commodo odio aenean sed adipiscing. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat.
-            <section>Canons</section>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio morbi quis commodo odio aenean sed adipiscing. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat.
-        </section>
-
-        <section id="lit-philo" class="page">
-            <h1>Literature and Philosophy</h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio morbi quis commodo odio aenean sed adipiscing. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat.
+        <section id="cs-page" class="page disabled">
+            <h1>My Technical Background.</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, ex nec ornare pretium, turpis dui gravida tellus, in porttitor sem urna in tellus. In vel maximus metus, nec mollis purus. Duis ut mi mattis, scelerisque arcu sed, porta enim. Sed enim nisi, volutpat cursus risus vitae, hendrerit dignissim tortor. Vivamus eget sapien magna. Sed porttitor laoreet mattis. Fusce scelerisque ex et lectus tincidunt venenatis. Mauris id ante vel neque ultrices aliquet. Vestibulum finibus egestas odio, nec rutrum quam luctus at. Quisque scelerisque convallis pretium.
+            <div id="cs-featured">
+                <h1>Featured projects</h1>
+                <h2>Iridis</h2>
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent ac nulla nec sapien elementum ultricies. Sed vitae molestie ligula, eget iaculis dui. Mauris auctor quam at ipsum auctor, vel congue nulla vehicula. Nunc lectus dolor, sodales nec sapien at, posuere lacinia enim. Quisque eget lorem maximus, porttitor dolor id, molestie erat. Fusce gravida tempus turpis, in lobortis velit. In in felis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                <h2>Excalibur</h2>
+                Vivamus pellentesque, diam ut tempor congue, odio enim ultricies leo, et cursus elit turpis vel nisl. Nunc a auctor sapien. Sed diam velit, eleifend ut purus vel, posuere ultrices eros. Sed ac urna vitae massa molestie porttitor non et arcu. Quisque sollicitudin pulvinar sagittis. Nulla quis porttitor quam. Maecenas urna mi, euismod sit amet urna a, dignissim semper ipsum. Curabitur tincidunt augue erat, in condimentum est facilisis non. Curabitur faucibus dui vel fringilla facilisis. Ut et neque sed augue ullamcorper porttitor quis sit amet massa. Aliquam venenatis dapibus urna, vitae pharetra augue varius quis.
+            </div>
         </section>
     </div>
 
@@ -59,8 +63,13 @@
             <a href="https://github.com/Hachem-H">Github</a> |
             <a href="https://youtube.com/@hachem.h">Youtube</a>
         </div>
-        <div>&copy; 2024 Hachem. All rights reserved</div>
+        <div>&copy; <p id="date" style="display: inline;"></p> Hachem. All rights reserved</div>
         <div><a href="mailto:contact@hachem.cc">contact@hachem.cc</a></div>
     </footer>
+
+
+    <script type="text/javascript">
+        document.getElementById('date').innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

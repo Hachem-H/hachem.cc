@@ -3,7 +3,6 @@ body {
     padding: 0;
     overflow-x: hidden;
     text-justify: inter-word;
-    text-align: justify;
     font-family: 'JMH Typewriter';
     scrollbar-width: none;
 }
@@ -27,10 +26,16 @@ a {
     text-decoration: none;
 }
 
+h1::before {
+    content: "§";
+    padding-right: 10px;
+    font-size: 1.5em; 
+}
+
 #toc {
     float: left;
     width: 15%;
-    padding: 20px;
+    margin: 20px;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -51,10 +56,12 @@ a {
 
 #toc a::before {
     content: "§ ";
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 #toc a:hover {
-    background-color: #ddd;
+    text-decoration: underline;
 }
 
 .pages {
@@ -64,14 +71,13 @@ a {
 
 .page {
     margin-left: 15%;
-    margin-right: 20px;
-    padding: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+	padding-top: 20%;
+
+    text-align: justify;
 }
 
-.page section {
-    text-align: center;
-}
-
-.page section::before {
-    content: "§ ";
+.disabled {
+    display: none !important;
 }
