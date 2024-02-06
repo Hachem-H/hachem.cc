@@ -1,40 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hachem H.</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cutive:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-    body {
-        background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
-        font-family: 'Cutive', sans-serif;
-
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .container {
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 3em;
-        margin-bottom: 0;
-    }
-    </style>
+    
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles/about.css" />
+    <link rel="stylesheet" type="text/css" href="styles/global.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Website under construction.</h1>
+    <script src="src/state.js"></script>
+
+    <nav id="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a onclick="SetState(States.ABOUT)">About the author</a></li>
+            <li><a onclick="SetState(States.CS)">Computer Science</a></li>
+            <li><a onclick="SetState(States.ART)">Music &amp; Art</a></li>
+            <li><a onclick="SetState(States.ACADEMIA)">Physics &amp; Mathematics</a></li>
+            <li><a onclick="SeTState(STATES.LIT)">Philosophy &amp; Litterature</a></li>
+        </ul>
+    </nav>
+    
+    <div class="pages">
+        <section id="about-page" class="page">
+            <div id="about-header">
+                <img id="about-logo" src="Assets/Images/Logo.jpg" />
+                <div id="about-info">
+                    <h1>Hachem H.</h1>
+                    A researcher who wants to make<br>truth their best friend.
+                </div>
+            </div>
+
+            <div id="about-content">
+                <h1>Who am I?</h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, ex nec ornare pretium, turpis dui gravida tellus, in porttitor sem urna in tellus. In vel maximus metus, nec mollis purus. Duis ut mi mattis, scelerisque arcu sed, porta enim. Sed enim nisi, volutpat cursus risus vitae, hendrerit dignissim tortor. Vivamus eget sapien magna. Sed porttitor laoreet mattis. Fusce scelerisque ex et lectus tincidunt venenatis. Mauris id ante vel neque ultrices aliquet. Vestibulum finibus egestas odio, nec rutrum quam luctus at. Quisque scelerisque convallis pretium.
+
+                <h1>What am I?</h2>
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent ac nulla nec sapien elementum ultricies. Sed vitae molestie ligula, eget iaculis dui. Mauris auctor quam at ipsum auctor, vel congue nulla vehicula. Nunc lectus dolor, sodales nec sapien at, posuere lacinia enim. Quisque eget lorem maximus, porttitor dolor id, molestie erat. Fusce gravida tempus turpis, in lobortis velit. In in felis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+                <h1>Why am I?</h2>
+                Vivamus pellentesque, diam ut tempor congue, odio enim ultricies leo, et cursus elit turpis vel nisl. Nunc a auctor sapien. Sed diam velit, eleifend ut purus vel, posuere ultrices eros. Sed ac urna vitae massa molestie porttitor non et arcu. Quisque sollicitudin pulvinar sagittis. Nulla quis porttitor quam. Maecenas urna mi, euismod sit amet urna a, dignissim semper ipsum. Curabitur tincidunt augue erat, in condimentum est facilisis non. Curabitur faucibus dui vel fringilla facilisis. Ut et neque sed augue ullamcorper porttitor quis sit amet massa. Aliquam venenatis dapibus urna, vitae pharetra augue varius quis.
+            </div>
+        </section>
+
+        <section id="cs-page" class="page disabled">
+            <h1>My Technical Background.</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, ex nec ornare pretium, turpis dui gravida tellus, in porttitor sem urna in tellus. In vel maximus metus, nec mollis purus. Duis ut mi mattis, scelerisque arcu sed, porta enim. Sed enim nisi, volutpat cursus risus vitae, hendrerit dignissim tortor. Vivamus eget sapien magna. Sed porttitor laoreet mattis. Fusce scelerisque ex et lectus tincidunt venenatis. Mauris id ante vel neque ultrices aliquet. Vestibulum finibus egestas odio, nec rutrum quam luctus at. Quisque scelerisque convallis pretium.
+            <div id="cs-featured">
+                <h1>Featured projects</h1>
+                <h2>Iridis</h2>
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent ac nulla nec sapien elementum ultricies. Sed vitae molestie ligula, eget iaculis dui. Mauris auctor quam at ipsum auctor, vel congue nulla vehicula. Nunc lectus dolor, sodales nec sapien at, posuere lacinia enim. Quisque eget lorem maximus, porttitor dolor id, molestie erat. Fusce gravida tempus turpis, in lobortis velit. In in felis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                <h2>Excalibur</h2>
+                Vivamus pellentesque, diam ut tempor congue, odio enim ultricies leo, et cursus elit turpis vel nisl. Nunc a auctor sapien. Sed diam velit, eleifend ut purus vel, posuere ultrices eros. Sed ac urna vitae massa molestie porttitor non et arcu. Quisque sollicitudin pulvinar sagittis. Nulla quis porttitor quam. Maecenas urna mi, euismod sit amet urna a, dignissim semper ipsum. Curabitur tincidunt augue erat, in condimentum est facilisis non. Curabitur faucibus dui vel fringilla facilisis. Ut et neque sed augue ullamcorper porttitor quis sit amet massa. Aliquam venenatis dapibus urna, vitae pharetra augue varius quis.
+            </div>
+        </section>
     </div>
+
+    <footer>
+        <div>
+            <a href="https://github.com/Hachem-H">Github</a> |
+            <a href="https://youtube.com/@hachem.h">Youtube</a>
+        </div>
+        <div>&copy; <p id="date" style="display: inline;"></p> Hachem. All rights reserved</div>
+        <div><a href="mailto:contact@hachem.cc">contact@hachem.cc</a></div>
+    </footer>
+
+
+    <script type="text/javascript">
+        document.getElementById('date').innerHTML = new Date().getFullYear();
+        alert('Website is still under construction');
+    </script>
 </body>
 </html>
