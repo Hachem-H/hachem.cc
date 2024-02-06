@@ -1,7 +1,10 @@
 const States = Object.freeze(
 {
-	ABOUT: 0,
-	CS:    1,
+	ABOUT:    0,
+	CS:       1,
+    ART:      2,
+    ACADEMIA: 3,
+    LIT:      4,
 });
 
 const SetState = (page) =>
