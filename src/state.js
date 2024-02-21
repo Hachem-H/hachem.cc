@@ -19,6 +19,12 @@ const SetState = (page) =>
 	case States.CS:
 		document.querySelector("#cs-page").classList.remove("disabled");
 		break;
+	case States.ART:
+		document.querySelector("#art-page").classList.remove("disabled");
+		break;
+	case States.ACADEMIA:
+		document.querySelector("#sci-page").classList.remove("disabled");
+		break;
 	default: break;
 	}
 }
