@@ -1,0 +1,19 @@
+.background-paralax {
+    width:100vw; 
+    height:100vh; 
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+}
+
+.main-body {
+    position: absolute; 
+    height: 100%; 
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.content-frame {
+    text-align: center;
+}
