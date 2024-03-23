@@ -1,19 +1,34 @@
 .background-paralax {
-    width:100vw; 
-    height:100vh; 
+    width: 100vw;
+    height: 100vh;
     padding: 0px;
     margin: 0px;
-    position: absolute;
+    position: fixed;
+    z-index: -1;
 }
 
 .main-body {
-    position: absolute; 
-    height: 100%; 
+    position: relative;
+    height: 100%;
     width: 100%;
     padding: 0px;
     margin: 0px;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+
+.content-frame h1 {
+    text-align: center;
 }
 
 .content-frame {
-    text-align: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-frame-data {
+    width: 50%;
+    font-size: 2rem;
 }

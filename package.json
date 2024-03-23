@@ -25,6 +25,7 @@
 	"dependencies": {
 		"@threlte/core": "^7.2.1",
 		"@threlte/extras": "^8.10.3",
-		"postprocessing": "^6.35.2"
+		"postprocessing": "^6.35.2",
+		"svelte-typewriter": "^3.2.3"
 	}
 }

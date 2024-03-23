@@ -1,0 +1,43 @@
+.content-frame h1 {
+    font-size: 3rem;
+}
+
+.content-frame p {
+    font-size: 1.5rem;
+}
+
+.content-frame  {
+    font-family: 'Croissant One';
+}
+
+.name-frame h1 {
+    color: white;
+    font-size: 5rem !important;
+}
+
+.name-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.empty-frame {
+    height: 50vh;
+}
+
+.about-frame {
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.cs-frame {
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Fira Code';
+}
+
+
