@@ -22,10 +22,6 @@
     height: 100vh;
 }
 
-.empty-frame {
-    height: 50vh;
-}
-
 .about-frame {
     background-color: white;
     padding-bottom: 10px;
