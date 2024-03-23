@@ -1,0 +1,51 @@
+.background-paralax {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    z-index: -1;
+}
+
+.main-body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+
+.content-frame h1 {
+    text-align: center;
+}
+
+.content-frame {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-frame-data {
+    width: 50%;
+    font-size: 2rem;
+}
+
+.footer {
+    color: white;
+    height: 3rem;
+    display: grid;
+    text-align: center;
+    bottom: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    background: none;
+}
+
+.footer a {
+    text-decoration: none;
+}
