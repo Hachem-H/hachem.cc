@@ -4,11 +4,11 @@
 }
 
 .mib-frame h1 {
-    font-family: 'Achilles';
+    font-family: "Achilles";
 }
 
 .mib-frame p {
-    font-family: 'Croissant One';
+    font-family: "Croissant One";
 }
 
 #mib-video {
@@ -21,9 +21,9 @@
 
 #mib-container {
     overflow: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #mib-button {

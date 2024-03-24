@@ -3,37 +3,37 @@ a {
 }
 
 #cs-container {
-	overflow: auto;
-	padding-bottom: 10%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    overflow: auto;
+    padding-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #iridis-description {
-	display: inline-block;
-	border-radius: 100%;
+    display: inline-block;
+    border-radius: 100%;
 }
 
 #iridis-image {
-	border-spacing: 1px;
-	padding-bottom: 20px;
-	padding-left: 10px;
-	margin-left: 10px;
-	vertical-align: top;
+    border-spacing: 1px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-left: 10px;
+    vertical-align: top;
     width: 49%;
 }
 
 #excalibur-description {
-	display: inline-block;
+    display: inline-block;
     border-spacing: 1px;
-	padding-bottom: 20px;
-	padding-left: 10px;
-	margin-left: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-left: 10px;
 }
 
 #excalibur-image {
-	vertical-align: top;
+    vertical-align: top;
     width: 49%;
 }
 
@@ -43,4 +43,12 @@ a {
     border-radius: 5px;
     border-style: solid;
     padding: 10px;
+}
+
+.cs-frame {
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Fira Code";
 }

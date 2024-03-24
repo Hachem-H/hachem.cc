@@ -1,7 +1,7 @@
 <script>
     import { Canvas } from "@threlte/core";
-    import Scene from "./animations/SolarSystem.svelte";
     import Typewriter from "svelte-typewriter";
+    import Scene from "./animations/SolarSystem.svelte";
 </script>
 
 <div class="background-paralax">
@@ -169,8 +169,15 @@
             <a target="_blank" href="https://github.com/Hachem-H">Github</a> |
             <a target="_blank" href="https://youtube.com/@hachem.h">Youtube</a>
         </div>
-        <div>&copy; <p id="date" style="display: inline;"></p> Hachem. All rights reserved</div>
-        <div><a target="_blank" href="mailto:contact@hachem.cc">contact@hachem.cc</a></div>
+        <div>
+            &copy; <p id="date" style="display: inline;"></p>
+             Hachem. All rights reserved
+        </div>
+        <div>
+            <a target="_blank" href="mailto:contact@hachem.cc"
+                >contact@hachem.cc</a
+            >
+        </div>
     </div>
 </div>
 
