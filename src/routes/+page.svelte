@@ -101,13 +101,13 @@
                             target="_blank"
                             href="http://github.com/Hachem-H/Excalibur"
                             id="cs-header">Excalibur</a
-                        > is a highly deceptive software posing a severe risk to
-                        computer systems. Masquerading as an innocent-looking game,
-                        it cleverly gains access through an installer that demands
-                        administrative privileges for execution, just like legitimate
-                        installers. While the installation process appears ordinary,
-                        unbeknownst to the user, Excalibur secretly initiates a malicious
-                        operation in the background.
+                        > is designed to exploit user-space vulnerabilities primarily
+                        through an installer utility. Upon gaining administrative
+                        access, it installs a backdoor, enabling attackers to execute
+                        various malicious actions such as initiating an MBR overwrite
+                        or deploying a keylogger. To conceal any suspicious activity,
+                        it is paired with a game called Excalibur featuring several
+                        levels and game modes.
                     </p>
                 </div>
             </div>
@@ -171,7 +171,7 @@
         </div>
         <div>
             &copy; <p id="date" style="display: inline;"></p>
-             Hachem. All rights reserved
+            Hachem. All rights reserved
         </div>
         <div>
             <a target="_blank" href="mailto:contact@hachem.cc"
