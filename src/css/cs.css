@@ -1,5 +1,4 @@
 a {
-    color: whitesmoke;
 }
 
 #cs-container {
@@ -41,8 +40,17 @@ a {
     background-color: black;
     border-color: white;
     border-radius: 5px;
+    color: white;
+    background-clip: padding-box;
+    transition: 0.5s;
     border-style: solid;
     padding: 10px;
+}
+
+#cs-button:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
 }
 
 .cs-frame {

@@ -29,9 +29,17 @@
 #mib-button {
     background-color: white;
     color: black;
+    background-clip: padding-box;
     border-color: black;
     border-radius: 5px;
     border-style: solid;
     margin: 10px;
     padding: 10px;
+    transition: 0.5s;
+}
+
+#mib-button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
 }
